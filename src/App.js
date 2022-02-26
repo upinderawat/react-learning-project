@@ -26,7 +26,7 @@ function App() {
     setError(null);
   };
   return (
-    <div>
+    <>
       {error && (
         <ErrorModal
           title={error.title}
@@ -36,7 +36,7 @@ function App() {
       )}
       <AddUser onAddUser={addUserHandler} onError={displayErrorHandler} />
       <UsersList users={usersList} />
-    </div>
+    </>
   );
 }
 
